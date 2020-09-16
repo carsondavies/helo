@@ -49,6 +49,11 @@ module.exports = {
 
   getPosts: async (req, res) => {
     const db = req.app.get('db')
+    const { userposts } = req.query
 
+    if (userposts === 'true') {
+      //write sql query to get single users posts for the user who is on session
+      //else get all of the posts from the database.
+    }
   }
 }
